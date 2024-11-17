@@ -34,7 +34,7 @@ export default function Home() {
             requestAnimationFrame(raf);
         }
         requestAnimationFrame(raf);
-    }, []);
+    }, [scrollYProgress]);
 
     return (
         <main className={styles.main}>
