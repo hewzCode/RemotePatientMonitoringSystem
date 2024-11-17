@@ -26,7 +26,7 @@ export default function PatientOneDashboard() {
     return (
         <div className={styles.container}>
             <div className={styles.nav}>
-                <button onClick={() => router.push('/doctor-dashboard')} className={styles.returnButton}>
+                <button onClick={() => router.push('/')} className={styles.returnButton}>
                     🔙 Return Back
                 </button>
             </div>
