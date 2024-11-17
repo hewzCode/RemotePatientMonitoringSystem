@@ -1,6 +1,6 @@
 .main {
   height: 100vh;
-  background: linear-gradient(180deg, #5c8dd6, #9a90378b, #4a71ac);
+  background: linear-gradient(180deg, #72c2d9 ,#e9ffef, #6dbf82);
   overscroll-behavior: none;
 
   .text-red {
@@ -10,7 +10,7 @@
   .scrollSection {
     overflow: hidden;
     position: relative;
-    background: linear-gradient(180deg, #4a71ac, #44689e, #395784);
+    background: linear-gradient(180deg, #6dbf82, #5ca16d, #508d5f);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -53,7 +53,7 @@
     mask-image: url('../../public/mask.svg');
     mask-repeat: no-repeat;
     mask-size: 100px;
-    background:   #ece939;
+    background:   #d0d5bf;
     position: absolute;
     color: rgb(167, 31, 31);
   } 
@@ -65,7 +65,7 @@
     align-items: center;
     justify-content: center;
     gap: 50px;
-    background: linear-gradient(180deg, #395784, #2b4163, #1e3250);
+    background: linear-gradient(180deg , #508d5f, #42754f);
     overscroll-behavior: none;
   }
 
@@ -84,7 +84,7 @@
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3), inset 0px 2px 5px rgba(255, 255, 255, 0.2);
     
     &:hover {
-      background-color: #204dc8;
+      background-color: #619a80;
       box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4), 0px 4px 10px rgba(0, 0, 0, 0.2), inset 0px 2px 5px rgba(255, 255, 255, 0.3);
       transform: scale(1.05);
     }

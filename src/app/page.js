@@ -11,7 +11,7 @@ export default function Home() {
     const [isHovered, setIsHovered] = useState(false);
     const [disableAnimation, setDisableAnimation] = useState(false);
     const { x, y } = useMousePosition();
-    const size = isHovered ? 150 : 50;
+    const size = isHovered ? 300 : 75;
     const router = useRouter();
     const containerRef = useRef();
     const { scrollYProgress } = useScroll({
@@ -43,13 +43,13 @@ export default function Home() {
                 <motion.div 
                     className={styles.mask}
                     animate={{
-                        WebkitMaskPosition: disableAnimation ? 'center center' : `${x - (size / 2)}px ${y - (size / 1)}px`,
+                        WebkitMaskPosition: disableAnimation ? 'center center' : `${x - (size / 2)}px ${y - (size / 2)}px`,
                         WebkitMaskSize: `${size}px`,
                     }}
                     transition={{ type: "tween", ease: "backOut", duration: 0.5 }}
                 >
                     <p onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
-                        Remote Patient Monitoring Solution
+                        Remote Patient Monitoring 
                     </p>
                 </motion.div>
                 <p style={{}}><span >LightHouse AI</span></p>
@@ -90,6 +90,8 @@ const Slide = ({ direction, left, progress }) => {
 
 const Phrase = () => (
     <div className="">
-        <p style={{ color: '#B9DEFE', opacity: '60%' }} className=" text-[7.5vw] text-white">"Ripples of Compassion, Waves of Healing"</p>
+        <p style={{ color: '#000000', opacity: '50%', fontStyle: 'italic', fontWeight: 'bold' }} className="text-[7.5vw] text-white">
+            "Ripples of Compassion, Waves of Healing"
+        </p>
     </div>
 );
