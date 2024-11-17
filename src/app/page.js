@@ -34,7 +34,7 @@ export default function Home() {
             requestAnimationFrame(raf);
         }
         requestAnimationFrame(raf);
-    }, []);
+    }, [scrollYProgress]);
 
     return (
         <main className={styles.main}>
@@ -91,7 +91,7 @@ const Slide = ({ direction, left, progress }) => {
 const Phrase = () => (
     <div className="">
         <p style={{ color: '#000000', opacity: '50%', fontStyle: 'italic', fontWeight: 'bold' }} className="text-[7.5vw] text-white">
-            "Ripples of Compassion, Waves of Healing"
+            &quot;Ripples of Compassion, Waves of Healing&quot;
         </p>
     </div>
 );
