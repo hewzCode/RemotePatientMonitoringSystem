@@ -1,0 +1,97 @@
+.main {
+  height: 100vh;
+  background: linear-gradient(180deg, #5c8dd6, #9a90378b, #4a71ac);
+  overscroll-behavior: none;
+
+  .text-red {
+    color: red;
+  }
+
+  .scrollSection {
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(180deg, #4a71ac, #44689e, #395784);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .mask{
+    width: 10%;
+      
+  }
+  
+  .mask, .body {
+    width: 135%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #e8f5e9;
+    font-size: 64px;
+    line-height: 66px;
+    cursor: default;
+
+    
+
+    p {
+      width: 1000px;
+      padding: 40px;
+      font-weight: 600;
+      color: rgba(34, 37, 60, 0.816);
+      text-shadow: 3px 3px 8px rgba(80, 71, 71, 0.802), 0px 0px 12px rgba(167, 137, 137, 0.2); // Cool shadow effect
+      transition: transform 0.3s ease, text-shadow 0.3s ease;
+      
+      &:hover {
+        transform: scale(1.05);
+        text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6), 0px 0px 20px rgba(255, 255, 255, 0.3);
+      }
+    }
+  }
+
+  .mask {
+    mask-image: url('../../public/mask.svg');
+    mask-repeat: no-repeat;
+    mask-size: 100px;
+    background:   #ece939;
+    position: absolute;
+    color: rgb(167, 31, 31);
+  } 
+
+  .buttonPage {
+    height: 35vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    background: linear-gradient(180deg, #395784, #2b4163, #1e3250);
+    overscroll-behavior: none;
+  }
+
+  .button {
+    padding: 25px 25px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    background-color: #697dbf6d;
+
+    // Enhanced button shadow and hover effect
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3), inset 0px 2px 5px rgba(255, 255, 255, 0.2);
+    
+    &:hover {
+      background-color: #204dc8;
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4), 0px 4px 10px rgba(0, 0, 0, 0.2), inset 0px 2px 5px rgba(255, 255, 255, 0.3);
+      transform: scale(1.05);
+    }
+
+    &:active {
+      transform: scale(0.98);
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3), inset 0px 2px 4px rgba(255, 255, 255, 0.2);
+    }
+  }
+}

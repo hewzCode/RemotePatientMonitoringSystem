@@ -1,0 +1,83 @@
+// page.module.scss for both sign-in pages with enhanced button styles
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: white;
+    background: linear-gradient(180deg, #72c2d9, #a0d6b4, #6dbf82); // Updated gradient
+    padding: 1.5rem;
+    position: relative;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .buttonContainer {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .roundButton {
+    width: 3.5rem;
+    height: 3.5rem;
+    background: linear-gradient(145deg, #67b7cc, #56a8b6);
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15), inset 0px 2px 4px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease, background 0.3s ease;
+  
+    &:hover {
+      background: linear-gradient(145deg, #5fa7bb, #489a9e);
+      transform: scale(1.1);
+    }
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  .label {
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .input {
+    color: #1f2937;
+    background-color: white;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+  }
+  
+  .confirmButton {
+    background: linear-gradient(145deg, #5fa7bb, #489a9e);
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15), inset 0px 2px 4px rgba(255, 255, 255, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  
+    &:hover {
+      background: linear-gradient(145deg, #489a9e, #5fa7bb);
+      transform: scale(1.05);
+    }
+  }
+  
