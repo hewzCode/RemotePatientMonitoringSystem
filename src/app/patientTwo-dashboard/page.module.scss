@@ -46,6 +46,20 @@
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
 }
 
+/* Recommendation Bubble */
+.recommendationBubble {
+    width: 80%;
+    background-color: #f3f8fa;
+    color: #333;
+    padding: 1.5rem;
+    border-radius: 16px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Patient Data Table */
 .table {
     width: 80%;
     border-collapse: collapse;
